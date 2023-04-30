@@ -1,0 +1,33 @@
+{
+	"name": "use-url",
+	"version": "1.0.0",
+	"description": "A custom hook for easily reading and writing all data types from url search params",
+	"main": "dist/index.js",
+	"scripts": {
+    "build" : "tsc",
+		"test": "jest --watch"
+	},
+	"keywords": [
+		"nextjs",
+		"react-hook",
+		"router",
+		"url",
+		"query-string",
+		"search-params",
+		"params",
+		"query"
+	],
+	"author": {
+		"name": "Dawid Wraga",
+		"email": "dpwraga@gmail.com",
+		"url": "https://dawidwraga.com"
+	},
+	"license": "ISC",
+	"peerDependencies": {
+		"next": ">=11.0.0",
+		"react": ">=17.0.0"
+	},
+	"dependencies": {
+		"qs": "^6.11.1"
+	}
+}
