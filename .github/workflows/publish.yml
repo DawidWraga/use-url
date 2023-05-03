@@ -11,12 +11,12 @@ jobs:
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
 
       - name: Set up Node.js
-        uses: actions/setup-node@v2
+        uses: actions/setup-node@v3
         with:
-          node-version: 14 # or the version you want to use
+          node-version: 17 # or the version you want to use
 
       - name: Install pnpm
         run: curl -L https://unpkg.com/@pnpm/self-installer | node
