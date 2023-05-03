@@ -26,6 +26,7 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
           cache: 'pnpm'
+          scope: '@davstack'
 
       - name: Install dependencies
         run: pnpm install
