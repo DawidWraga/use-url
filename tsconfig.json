@@ -1,8 +1,7 @@
 {
 	"compilerOptions": {
 		"baseUrl": ".",
-		"lib": ["DOM"],
-		"types": ["@types/webpack", "@types/jest", "./next-env"],
+		"lib": ["DOM", "esnext"],
 		"moduleResolution": "node",
 		"declaration": true,
 		"outDir": "./dist",
@@ -30,5 +29,5 @@
 		"emitDecoratorMetadata": true
 	},
 	"include": ["./src/**/*.ts", "./src/**/*.tsx"],
-	"exclude": ["./.next", "./dist", "./src/pages", "./src/tests", "node_modules"]
+	"exclude": ["node_modules"]
 }
