@@ -27,19 +27,14 @@ jobs:
           node-version: ${{ matrix.node-version }}
           cache: 'pnpm'
 
-      - name: Print pnpm-lock.yaml content
-        run: cat pnpm-lock.yaml
-
       - name: Install dependencies
         run: pnpm install
 
       - name: Build package
         run: pnpm run build # or the build script you have in your package.json
 
-      - name: Show Git status and differences
-        run: |
-          git status
-          git diff
+      - name: Authenticate with npm
+        run: echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_AUTH_TOKEN }}" > ~/.npmrc
 
       - name: Publish to npm
         run: pnpm publish
