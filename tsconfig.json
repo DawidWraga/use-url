@@ -1,6 +1,5 @@
 {
 	"compilerOptions": {
-		"baseUrl": ".",
 		"lib": ["DOM", "esnext"],
 		"moduleResolution": "node",
 		"declaration": true,
@@ -26,7 +25,12 @@
 
 		// Experimental Options
 		"experimentalDecorators": true,
-		"emitDecoratorMetadata": true
+		"emitDecoratorMetadata": true,
+
+		"baseUrl": ".",
+		"paths": {
+			"~/*": ["./src/*"]
+		}
 	},
 	"include": ["./src/**/*.ts", "./src/**/*.tsx"],
 	"exclude": ["node_modules"]
