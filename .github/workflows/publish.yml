@@ -33,6 +33,11 @@ jobs:
       - name: Build package
         run: pnpm run build # or the build script you have in your package.json
 
+      - name: Show Git status and differences
+        run: |
+          git status
+          git diff
+
       - name: Publish to npm
         run: pnpm publish
         env:
