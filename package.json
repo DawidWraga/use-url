@@ -4,7 +4,7 @@
 	"description": "A custom hook for easily reading and writing all data types from url search params",
 	"main": "dist/index.js",
 	"scripts": {
-    "build" : "tsc",
+		"build": "tsc",
 		"test": "jest --watch"
 	},
 	"keywords": [
@@ -24,8 +24,8 @@
 	},
 	"license": "ISC",
 	"peerDependencies": {
-		"next": ">=11.0.0",
-		"react": ">=17.0.0"
+		"next": ">=12.0.0",
+		"react": ">=17.0.2"
 	},
 	"dependencies": {
 		"qs": "^6.11.1"
