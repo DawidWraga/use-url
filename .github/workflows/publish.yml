@@ -11,6 +11,9 @@ jobs:
     strategy:
       matrix:
         node-version: [17]
+      permissions:
+        contents: read
+        packages: write
 
     steps:
       - name: Checkout repository
