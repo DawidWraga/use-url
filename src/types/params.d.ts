@@ -1,4 +1,1 @@
-export interface Params {
-	startDate: Date;
-	endDate: Date;
-}
+export interface Params {}
