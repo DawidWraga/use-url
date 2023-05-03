@@ -11,9 +11,6 @@ jobs:
     strategy:
       matrix:
         node-version: [17]
-      permissions:
-        contents: read
-        packages: write
 
     steps:
       - name: Checkout repository
@@ -30,7 +27,7 @@ jobs:
           node-version: ${{ matrix.node-version }}
           cache: 'pnpm'
           scope: '@davstack/use-url'
-          registry-url: 'https://npm.pkg.github.com'
+          # registry-url: 'https://npm.pkg.github.com'
 
       - name: Install dependencies
         run: pnpm install
