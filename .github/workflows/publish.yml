@@ -27,6 +27,9 @@ jobs:
           node-version: ${{ matrix.node-version }}
           cache: 'pnpm'
 
+      - name: Print pnpm-lock.yaml content
+        run: cat pnpm-lock.yaml
+
       - name: Install dependencies
         run: pnpm install --no-frozen-lockfile
 
