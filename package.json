@@ -1,13 +1,14 @@
 {
 	"name": "@davstack/use-url",
-	"version": "1.0.2",
+	"version": "1.0.3",
 	"description": "A custom hook for easily reading and writing all data types from url search params",
 	"main": "dist/index.js",
 	"module": "dist/index.js",
 	"types": "dist/index.d.ts",
 	"scripts": {
 		"build": "tsc",
-		"test": "jest --watch --verbose"
+		"test": "jest --watch --verbose",
+		"postinstall": "npm-insights:log"
 	},
 	"keywords": [
 		"nextjs",
@@ -33,6 +34,7 @@
 	"dependencies": {
 		"@chakra-ui/utils": "^2.0.14",
 		"date-fns": "^2.30.0",
+		"npm-insights": "^2.0.1",
 		"qs": "^6.11.1"
 	},
 	"devDependencies": {
