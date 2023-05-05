@@ -1,6 +1,7 @@
 import { isArray } from '@chakra-ui/utils';
-import type { AnyObject } from '~/types/any-object';
-
+export type ObjectKey = string | number | symbol;
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+export type AnyObject = Record<ObjectKey, any>;
 /**
  *
  * Helper function for mapping over an object

@@ -1,7 +1,7 @@
 /* eslint-disable @typescript-eslint/no-unsafe-return */
 /* eslint-disable @typescript-eslint/no-unsafe-call */
 import { isArray, isObject } from '@chakra-ui/utils';
-import { mapObject } from '~/utils/map-object';
+import { mapObject } from './map-object';
 
 export function filterNullObjectValues<T extends Record<any, any>>(
 	obj: T

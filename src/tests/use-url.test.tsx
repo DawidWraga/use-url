@@ -1,7 +1,7 @@
 /* eslint-disable @typescript-eslint/no-unsafe-call */
 import { renderHook } from '@testing-library/react';
-import { useUrl } from '~/use-url';
-import { stringify } from '~/utils/stringify';
+import { useUrl } from '../use-url';
+import { stringify } from '../utils/stringify';
 
 // Mocking useRouter so that we can test useUrl without Next.js
 jest.mock('next/router', () => ({

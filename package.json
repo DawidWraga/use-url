@@ -1,6 +1,6 @@
 {
 	"name": "@davstack/use-url",
-	"version": "1.0.4",
+	"version": "1.0.5",
 	"description": "A custom hook for easily reading and writing all data types from url search params",
 	"main": "dist/index.js",
 	"module": "dist/index.js",

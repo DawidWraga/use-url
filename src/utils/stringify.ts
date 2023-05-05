@@ -1,6 +1,6 @@
 import { format, isDate } from 'date-fns';
 import qs from 'qs';
-import { filterNullObjectValues } from '~/utils/filter-null-object-values';
+import { filterNullObjectValues } from './filter-null-object-values';
 
 export interface StringifyOptions extends qs.IStringifyOptions {
 	filterNull?: boolean;

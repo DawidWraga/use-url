@@ -95,13 +95,13 @@ export default function CounterComponent() {
 ## Types
 
 ```ts
-import '~/@davstack/use-url/src/types/params';
+import { Params } from '@davstack/use-url';
 
-declare module '~/@davstack/use-url/src/types/params' {
+declare module '@davstack/use-url' {
 	export interface Params {
 		startDate: Date;
 		endDate: Date;
-		// Add more custom properties as needed
+		//... add custom properties here
 	}
 }
 ```
