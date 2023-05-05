@@ -1,25 +1,42 @@
-# useUrl hook for Next.js
+<h1 align="center">
+	🌐 useUrl: Next.js URL State Management 🔗
+</h1>
+
+<h2 align="center">
+	Easily read and write complex data types as URL query parameters
+</h2>
+
+<br/>
+
+<div align="center">
 
 [![NPM](https://img.shields.io/npm/v/@davstack/use-url?color=red)](https://www.npmjs.com/package/@davstack/use-url)
 [![Continuous Integration](https://github.com/DawidWraga/use-url/actions/workflows/publish.yml/badge.svg?branch=main)](https://github.com/DawidWraga/use-url/actions/workflows/publish.yml/)
 
-A convenient wrapper around next router for setting & getting compound datatypes from URL query params
+</div>
+
+<br/>
 
 ## Features
 
-- 🌐 Simple global state management: the URL is the source of truth.
-- 🔗 Supports Arrays, Objects, Arrays of Objects, Dates, and primitive data types
+- 🌐 Simplified global state management: the URL serves as the single source of truth.
+- 🔗 Supports Arrays, Objects, Arrays of Objects, Dates, and primitive data types.
+- 🟦 Supports TypeScript, with custom param types.
 
 ## Installation
 
 ```shell
 npm install @davstack/use-url
 ```
+
 or
+
 ```shell
 pnpm add @davstack/use-url
 ```
+
 or
+
 ```shell
 yarn add @davstack/use-url
 ```
@@ -48,8 +65,6 @@ export default () => {
 	);
 };
 ```
-
-![](./useQueryState.gif)
 
 Example: simple counter stored in the URL:
 
