@@ -6,9 +6,9 @@
 import { runIfFn } from '@chakra-ui/utils';
 import { useRouter } from 'next/router';
 import { useCallback, useMemo } from 'react';
-import { type Params } from '~/types/params';
-import { parse } from '~/utils/parse';
-import { stringify } from '~/utils/stringify';
+import { type Params } from './types/params';
+import { parse } from './utils/parse';
+import { stringify } from './utils/stringify';
 
 export interface UseUrlProps {}
 
