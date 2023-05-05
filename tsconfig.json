@@ -33,5 +33,11 @@
 		}
 	},
 	"include": ["./src/**/*.ts", "./src/**/*.tsx"],
-	"exclude": ["node_modules"]
+	"exclude": [
+		"node_modules",
+		"./src/tests/**/*",
+		"./src/**/*.test.ts",
+		"./src/**/*.test.tsx",
+		"dist"
+	]
 }
